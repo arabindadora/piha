@@ -27,10 +27,10 @@ type Credentials struct {
 // struct reading the secrets from .env file
 func NewCredentials() Credentials {
 	return Credentials{
-		ConsumerKey:       os.Getenv("API_KEY"),
-		ConsumerSecret:    os.Getenv("API_KEY_SECRET"),
-		AccessToken:       os.Getenv("ACCESS_TOKEN"),
-		AccessTokenSecret: os.Getenv("ACCESS_TOKEN_SECRET"),
+		ConsumerKey:       os.Getenv("TWITTER_API_KEY"),
+		ConsumerSecret:    os.Getenv("TWITTER_API_KEY_SECRET"),
+		AccessToken:       os.Getenv("TWITTER_ACCESS_TOKEN"),
+		AccessTokenSecret: os.Getenv("TWITTER_ACCESS_TOKEN_SECRET"),
 	}
 }
 
