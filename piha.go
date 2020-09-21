@@ -108,10 +108,13 @@ func NewRant() (string, error) {
 }
 
 func init() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
+	// check if running locally
+	localEnvFile := "local.env"
+	if _, err := os.Stat(localEnvFile); err == nil {
+		godotenv.Load(localEnvFile)
 	}
+	// load config
+	godotenv.Load("config.env")
 }
 
 func main() {
