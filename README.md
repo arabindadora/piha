@@ -1,5 +1,7 @@
 # piha
 
+![CodeQL](https://github.com/nullv01d/piha/workflows/CodeQL/badge.svg)
+
 A twitter bot that automatically tweets a rant.
 
 ## What's with the name?
