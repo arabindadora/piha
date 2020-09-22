@@ -15,10 +15,10 @@ Named after the screaming bird [piha](https://en.wikipedia.org/wiki/Screaming_pi
 ## How do I run it?
 ### Prerequisite
 1. You will need a twitter developer account. Follow the instructions [here](https://developer.twitter.com/en/portal) to set up a new twitter bot app and gather the following secrets:
-    * API_KEY
-    * API_KEY_SECRET
-    * ACCESS_TOKEN
-    * ACCESS_TOKEN_SECRET
+    * TWITTER_API_KEY
+    * TWITTER_API_KEY_SECRET
+    * TWITTER_ACCESS_TOKEN
+    * TWITTER_ACCESS_TOKEN_SECRET
 2. edit `config.env` file and setup the below configurations
     * RANT_USER - the twitter handle of the service provider
     * RANT_DATE - the date in YYYY-MM-DD format when your issue with the service provider occurred
